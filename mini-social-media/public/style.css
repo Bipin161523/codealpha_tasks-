@@ -1,0 +1,697 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #202124;
+
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+
+    height: 68px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+
+}
+
+
+.logo {
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+nav a {
+
+    color: #333;
+
+    text-decoration: none;
+
+}
+
+
+nav button {
+
+    background: #111;
+
+    color: white;
+
+    border: 0;
+
+    padding: 10px 17px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+
+    width:
+        min(
+            1150px,
+            92%
+        );
+
+    margin: auto;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    margin: 25px 0;
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #e8edff,
+            #ffffff
+        );
+
+}
+
+
+.hero span {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            35px,
+            5vw,
+            60px
+        );
+
+    margin: 12px 0;
+
+}
+
+
+.hero p {
+
+    color: #666;
+
+    font-size: 17px;
+
+}
+
+
+/* ================= LAYOUT ================= */
+
+.layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 320px;
+
+    gap: 25px;
+
+}
+
+
+/* ================= CARDS ================= */
+
+.composer,
+.post,
+.sidebar {
+
+    background: white;
+
+    border:
+        1px solid #e7e7e7;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.composer h2,
+.section-title h2,
+.sidebar h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ================= FORM ================= */
+
+textarea,
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 7px;
+
+    margin-bottom: 10px;
+
+    font-family: inherit;
+
+}
+
+
+textarea {
+
+    height: 100px;
+
+    resize: vertical;
+
+}
+
+
+.primary {
+
+    background: #111;
+
+    color: white;
+
+    border: 0;
+
+    padding: 10px 17px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= POST ================= */
+
+.post-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.avatar {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+
+.user-name {
+
+    font-weight: bold;
+
+}
+
+
+.username {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.post-content {
+
+    margin: 18px 0;
+
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+
+}
+
+
+.post-image {
+
+    width: 100%;
+
+    max-height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ================= POST ACTIONS ================= */
+
+.post-actions {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    border-top:
+        1px solid #eee;
+
+    padding-top: 12px;
+
+}
+
+
+.like-btn {
+
+    border: 0;
+
+    background: #f1f1f1;
+
+    padding: 9px 14px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+}
+
+
+.like-btn.liked {
+
+    background: #ffe5e8;
+
+    color: #d22;
+
+}
+
+
+/* ================= COMMENTS ================= */
+
+.comment-box {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+}
+
+
+.comment-box input {
+
+    margin: 0;
+
+}
+
+
+.comment-box button {
+
+    border: 0;
+
+    background: #111;
+
+    color: white;
+
+    padding: 0 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+}
+
+
+.comments {
+
+    margin-top: 12px;
+
+}
+
+
+.comment {
+
+    padding: 9px 0;
+
+    border-bottom:
+        1px solid #eee;
+
+    font-size: 14px;
+
+}
+
+
+/* ================= PEOPLE ================= */
+
+.person {
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid #eee;
+
+}
+
+
+.person-info {
+
+    flex: 1;
+
+}
+
+
+.person-info strong {
+
+    display: block;
+
+}
+
+
+.person-info small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #777;
+
+}
+
+
+.follow-btn {
+
+    padding: 8px 11px;
+
+    background: #111;
+
+    color: white;
+
+    border: 0;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= DELETE ================= */
+
+.delete-btn {
+
+    margin-left: auto;
+
+    border: 0;
+
+    background: none;
+
+    color: #c00;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= MODAL ================= */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.55
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 50;
+
+}
+
+
+.modal-box {
+
+    width:
+        min(
+            420px,
+            92%
+        );
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+    position: relative;
+
+}
+
+
+.close {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 10px;
+
+    border: 0;
+
+    background: none;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= TABS ================= */
+
+.tabs {
+
+    display: flex;
+
+    margin-bottom: 18px;
+
+}
+
+
+.tabs button {
+
+    flex: 1;
+
+    padding: 11px;
+
+    border: 0;
+
+    cursor: pointer;
+
+}
+
+
+.tabs .active {
+
+    background: #111;
+
+    color: white;
+
+}
+
+
+form {
+
+    display: grid;
+
+    gap: 8px;
+
+}
+
+
+#authMessage {
+
+    margin-top: 12px;
+
+    color: #d00;
+
+}
+
+
+/* ================= TOAST ================= */
+
+#toast {
+
+    display: none;
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    background: #111;
+
+    color: white;
+
+    padding: 13px 18px;
+
+    border-radius: 7px;
+
+    z-index: 100;
+
+}
+
+
+/* ================= HIDDEN ================= */
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 800px) {
+
+    .layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .sidebar {
+
+        order: -1;
+
+    }
+
+
+    header {
+
+        padding: 0 4%;
+
+    }
+
+
+    nav {
+
+        gap: 8px;
+
+    }
+
+
+    nav a {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        padding: 30px;
+
+    }
+
+}
